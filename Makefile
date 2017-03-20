@@ -8,7 +8,7 @@ build:
 
 .PHONY: test
 test:
-	brew audit --new-formula $(NAME).rb
+	brew audit --strict $(NAME).rb
 
 .PHONY: hash
 hash:
