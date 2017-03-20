@@ -1,0 +1,15 @@
+class Els < Formula
+  desc "List ec2 instances."
+  homepage "https://github.com/ringohub/els"
+  url "https://github.com/ringohub/els/releases/download/v<%= ENV['VERSION'] %>/els_darwin-amd64.zip"
+  version "<%= ENV['VERSION'] %>"
+  sha256 "<%= ENV['HASH'] %>"
+
+  def install
+    bin.install "els"
+  end
+
+  test do
+    system "#{bin}/els", "-v"
+  end
+end
