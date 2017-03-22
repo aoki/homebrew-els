@@ -1,6 +1,6 @@
 NAME := els
 FILENAME := $(NAME)_darwin-amd64.zip
-VERSION := 0.2.2
+VERSION := 0.2.3
 
 .PHONY: build
 build:
